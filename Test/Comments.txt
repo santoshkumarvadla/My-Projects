@@ -1,0 +1,5 @@
+IDE : Brackets
+Front End Framework : Angular JS
+
+I have created this application in AngularJS, added all refernce files to complete the project in future, for complete developement with reponsive.
+ 

@@ -1,0 +1,172 @@
+.body {
+  height: 100% !important;
+  margin: 0 !important;
+  max-height: 100%;
+  width: 100% !important;
+  background-color: white;
+  font-size: 14px;
+  color: #1d1f21;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: initial;
+}
+
+.topBarWithNav {
+  width: 100%;
+  height: 90px;
+  background-color: #EDF8F4;
+  border: 1px solid #ccc;
+}
+
+.loadPageURLDiv {
+  background: #E3E3DA;
+  width: 100%;
+  height: 768px;
+}
+
+.navDiv {
+  height: 48px;
+  background-color: #FAFBFB;
+  width: 75%%;
+  position: absolute;
+  z-index: 10;
+  font-size: 18px;
+  top: 40px;
+  right: 0;
+}
+
+.subNavDiv {
+  height: 55px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  font-size: 18px;
+}
+
+.subNavDiv ul {
+  list-style-type: none;
+  margin: 0 0 0 45px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  height: 50px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.subNavDiv li {
+  float: left;
+  height: 35px;
+  line-height: 1;
+  padding: 15px 0 0 0;
+  margin: 4px 0 0 0;
+}
+
+.subNavDiv li a {
+  color: black;
+  text-align: center;
+  padding: 49px;
+  text-decoration: none;
+}
+
+.navDiv ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FAFBFB;
+  height: 52px;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+
+.navDiv li {
+  float: left;
+  height: 35px;
+  line-height: 1;
+  padding: 14px 0 0 0;
+  border-right: 1px solid #ccc;
+  margin: 0px 0 0 0;
+  border: 1px solid #ccc;
+}
+
+.navDiv li a {
+  color: #84A394;
+  text-align: center;
+  padding: 49px;
+  text-decoration: none;
+}
+
+.activeThis {
+  background-color: white;
+  box-shadow: 1px -10px 13px #888888;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+  border-bottom: none !important;
+}
+
+.plusButton {
+  position: absolute;
+  z-index: 999;
+  margin-left: 90px;
+  width: 80px;
+  height: 80px;
+  background: #B1D398;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.tilesSection {
+  margin: 10px 0 0 300px;
+  position: absolute;
+  display: inline-flex;
+}
+
+.tile1,
+.tile2,
+.tile3 {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0px 0px 10px #CCC;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.createIcon {
+  display: initial;
+  float: right;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.smallgraph {
+  position: absolute;
+  width: 270px;
+  margin: 0px 0 0 -10px;
+  background: rgb(244, 244, 238);
+}
+
+.salesReport {
+  width: 90px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.lessInfo {
+  font-size: 12px
+}
+
+.allPrograms {
+  padding: 320px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="challengeApp">
+
+<head>
+  <title>Challenge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!--  JQuery JS-->
+  <script type="text/javascript" src="js/jquery/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-migrate-1.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-ui-1.10.3.custom.min.js"></script>
+
+
+  <!-- Angular JS -->
+  <script type="text/javascript" src="js/angular/angularjs.min.js"></script>
+  <script type="text/javascript" src="js/angular/angular-route.js"></script>
+  <script type="text/javascript" src="js/angular/ocLazyLoad.js"></script>
+  <script type="text/javascript" src="js/angular/ngDraggable.js"></script>
+  <script type="text/javascript" src="js/angular/bindonce/bindonce.min.js"></script>
+
+
+  <!-- UI - GRID related scripts  -->
+  <script src="js/angular/uigrid/angular-touch.js"></script>
+  <script src="js/angular/uigrid/angular-animate.js"></script>
+  <script src="js/angular/uigrid/ui-grid.min.js"></script>
+  <!-- End -->
+
+
+  <!-- Materila Design -->
+  <script src="js/angular/material/angular-aria.min.js"></script>
+  <script src="js/angular/material/angular-messages.min.js"></script>
+  <script src="js/angular/material/angular-material.min.js"></script>
+
+  <script type="text/javascript" src="js/challengeApp.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="challenge/css/challengestyles.css" />
+  <script type="text/javascript" src="challenge/js/controllers/challengeController.js"></script>
+  <script type="text/javascript" src="challenge/js/services/challengeService.js"></script>
+
+
+</head>
+
+<body class="body">
+  <div data-ng-controller="challengeController">
+		<div class="topBarWithNav">
+		<img style="padding:10px;" alt="Logo" src="challenge/images/Main Image.png" />
+			<div class="navDiv">
+			      <ul>
+			        <li ng-class="{activeThis: challenge.workArea=='dashboard'}" ng-click="challenge.loadPartialScripts('dashboard')"><a href="javascript:void(0)">Dashboard</a></li>
+			        <li ng-class="{activeThis: challenge.workArea=='signIn'}" ng-click="challenge.loadPartialScripts('signIn')"><a href="javascript:void(0)">Sign In</a></li>
+			 		<li ng-class="{activeThis: challenge.workArea=='classes'}" ng-click="challenge.loadPartialScripts('classes')"><a href="javascript:void(0)">Classes</a></li>
+					<li ng-class="{activeThis: challenge.workArea=='appointements'}" ng-click="challenge.loadPartialScripts('appointements')"><a href="javascript:void(0)">Appointments</a></li>
+					<li ng-class="{activeThis: challenge.workArea=='clientHome'}" ng-click="challenge.loadPartialScripts('clientHome')"><a href="javascript:void(0)">Client Home</a></li>
+					<li ng-class="{activeThis: challenge.workArea=='retail'}" ng-click="challenge.loadPartialScripts('retail')"><a href="javascript:void(0)">Retail</a></li>
+			      </ul>
+			 </div>
+		</div>
+
+	<div class="subNavDiv">
+	      <ul>
+	        <li><a href="javascript:void(0)">Dashboard</a></li>
+	        <li style="font-weight:bold;"><a href="javascript:void(0)">Business Overview</a></li>
+	 		<li ><a href="javascript:void(0)">Schedule</a></li>
+			<li ><a href="javascript:void(0)">Reports</a></li>
+
+	      </ul>
+
+       <div class="loadPageURLDiv"  ng-include="challenge.templateSrc"></div>
+
+	</div>
+
+
+
+
+  </div>
+
+</body>
+
+</html>
